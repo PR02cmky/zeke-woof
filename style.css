@@ -23,9 +23,36 @@ body {
     color: rgb(161, 20, 20);
     text-shadow: 10px 10px 10px black;
     font-family: 'Comic Sans MS', cursive;
+    transition: 0.3s ease;
 }
 
 .container img {
     border-radius: 50%;
     object-fit: cover;
+    animation: spin 2s ease-in-out infinite;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(151, 6, 30);
+}
+
+.socials p {
+    color: aqua;
 }
